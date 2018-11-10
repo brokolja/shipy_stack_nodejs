@@ -2,11 +2,11 @@ ARG VERSION=latest
 
 ARG NODE_ENV=production
 
+FROM node:$VERSION
+
 ENV NODE_ENV=$NODE_ENV
 
 ENV PORT=8080
-
-FROM node:$VERSION
 
 RUN mkdir -p /usr/src/app
 
